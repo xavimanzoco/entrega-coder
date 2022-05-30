@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/IMG_3350_Original (1).png">
+    <title>Contacto</title>
+</head>
+<body id="grid-contacto">
+    <header>
+        <h1 class="titulo">
+            <a title="logoPrincipal" href="../index.html"><img src="../img/IMG_3350_Original (1).png" alt="logoPrincipal" width="300"></a>
+        </h1>
+        
+    </header>
+            
+    <main id="main-contacto">        
+        <section class="formulario">
+            <h3>
+                Contactate con nostros:
+            </h3>
+            <form action="enviar.php" method="get" enctype="text/plain"></form>
+                <div>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" required>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" id="apellido" required>
+                    <label for="email">Mail de contacto:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <br>
+                
+                <hr>
+
+                <div>
+                    <p>¿Cual es su propuesta?</p>
+                    <textarea name="propuesta" id="propuesta" cols="80" rows="10" placeholder="Ingrese su propuesta aqui"></textarea>
+                </div>
+
+                <div class="tipoEvento">
+                    <p>¿Que tipo de evento es?</p>
+                    <input type="radio" name="evento" value="1">Cumpleaños de 15
+                    <input type="radio" name="evento" value="2">Casamiento
+                    <input type="radio" name="evento" value="3">Evento Empresarial
+                    <input type="radio" name="evento" value="4">Otro
+                </div>
+                
+                <hr>
+                
+                <div>
+                    <label for="acepto">Acepto ter. y cond.</label>
+                    <input type="checkbox" id="acepto" required>
+                    <label for="news" id="news">¿Queres recibir novedades de la empresa?</label>
+                    <input type="checkbox" id="news">
+                </div>
+                
+                <br>
+
+                <div class= "respuestaServidor">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar Todo">
+                </div>
+            
+        </section>
+        <div class="logoDeWsp">
+            <a title="logoDeWsp" href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp-logo-11.png" alt="logoWsp" width="100"/></a>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="pieDePagina"> 
+            <p>Encontranos/Numero de telefono/Todos los derechos reservados</p>
+        </div>
+    </footer>    
+</body>
+</html>

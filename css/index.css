@@ -1,0 +1,370 @@
+* {
+
+    margin: 0;
+    font-family: 'Koulen', cursive;
+
+}
+body {
+    padding: 0;
+    background-color: rgb(223, 223, 212);
+    background-image: linear-gradient(beige,rgb(223, 223, 212));
+}
+.titulo {
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+
+}
+
+.navegador ul  {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 320px;
+}
+
+.navegador ul li {
+    padding: 0;
+    background-image: linear-gradient(white, rgb(203, 203, 203));
+    height: 310px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px black;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px 1px rgb(0 0 0 / 40%);
+}
+
+.navegador ul li img:hover {
+
+    height: 320px;
+    width: 217px;
+
+}
+
+.navegador ul li a {
+    background-color: white;
+}
+
+.navegador ul li img { 
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 270px;
+    width: 180px;
+    border: solid 2px black;  
+    border-radius: 5px
+}
+
+.navegador a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}
+
+.promociones {
+    border: 14px;
+    text-align: center;
+    font-size: 30px;
+    
+
+}
+.promociones img {
+
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px 1px rgb(0 0 0 / 40%);
+
+}
+.logoDeWsp {
+
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background-color: transparent;
+}
+
+.pieDePagina {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(223, 223, 212); 
+}
+
+
+.somosTexto {
+
+    text-align: center;
+    background-color: beige;
+    border: 3px black solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+}
+
+.formulario {
+
+    text-align: center;
+    background-color: beige;
+    border: 1px black solid;
+    width: 1px;
+    height: 1px;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 100px;
+    padding: 1em;
+
+}
+
+.formulario textarea {
+
+    background-color: white;
+    text-align: center;
+}
+
+.serviciosAnteriores {
+
+    text-align: center;
+    border: 1 solid black;
+    margin: 77px;
+    margin-top: 0;
+
+}
+.serviciosAnteriores div {
+
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 10px;
+} 
+
+.formulario input {
+
+    background-color: white;
+    text-align: center;
+}
+
+.tipoEvento input {
+
+    background-color: white;
+    text-align: center;
+    margin: 7px;
+}
+
+.tipoEvento p {
+
+    font-size: 25px;
+}
+
+.respuestaServidor input {
+
+    padding: 1px 20px
+
+}
+
+.tablaServicios {
+
+    padding: inherit;
+    text-align: center;
+}
+
+
+
+/* GRID */
+
+#grilla {
+
+    display: grid;
+    grid-template-areas:
+        ". header ."
+        ". nav ."
+        "promo promo promo"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 320px 400px 600px;
+    justify-self: center;
+
+
+}
+
+header h1 {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+main#promo {
+    grid-area: promo;
+}
+footer {
+    grid-area: footer;
+}
+
+
+#grid-contacto {
+    
+    display: grid;
+    grid-template-areas:
+        ". header ."
+        ". formu ."
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 340px 780px 30px;
+    justify-self: center;
+}
+
+header {
+    grid-area: header;
+}
+#main-contacto {
+    grid-area: formu;
+}
+footer {
+    grid-area: footer;
+}
+
+#grid-somos {
+    
+    display: grid;
+    grid-template-areas:
+        ". header ."
+        ". somos ."
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 340px 330px 30px;
+    justify-self: center;
+}
+
+header {
+    grid-area: header;
+}
+main {
+    grid-area: somos;
+}
+footer {
+    grid-area: footer;
+}
+
+#tabla-servicios {
+
+    display: grid;
+    grid-template-areas:
+        ". header ."
+        ". tabla ."
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 340px 625px 30px;
+    justify-self: center;
+    justify-items: center;
+}
+
+header {
+    grid-area: header;
+}
+#main-servicios {
+    grid-area: tabla;
+}
+footer {
+    grid-area: footer;
+}
+
+#eventos-anteriores {
+
+    display: grid;
+    grid-template-areas:
+        ". header ."
+        "eventos-ant eventos-ant eventos-ant"
+        "footer footer footer";
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 340px 700px 30px;
+    justify-self: center;
+}
+
+header {
+    grid-area: header;
+}
+#main-anteriores{
+    grid-area: eventos-ant;
+}
+footer {
+    grid-area: footer;
+}
+
+
+/* MEDIA */
+
+
+@media screen and (max-width: 768px) {
+    
+    .navegador ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .promociones img {
+        width: 400px;
+    }
+    #grilla {
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-rows: 320px 680px 350px;
+        
+    }
+
+    .navegador ul li {
+        margin-bottom: 10px;
+    }
+    
+    .logoDeWsp {
+        top: 2%;
+        right: 1%;
+        background-color: transparent;
+    }
+    .serviciosAnteriores div {
+        margin: 18px 109px;
+    }
+    #eventos-anteriores {
+
+        grid-template-rows: 340px 1429px 30px;
+        }   
+    }
+    #tabla-servicios {
+    grid-template-rows: 340px 655px 30px;
+    }
+
+@media screen and (max-width: 534px) {
+    
+    .navegador ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .promociones img {
+        width: 400px;
+    }
+    #grilla {
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-rows: 320px 1330px 300px;
+        
+    }
+
+    .promociones img {
+        width: 340px;
+    }
+    .navegador ul li {
+        margin-bottom: 10px;
+    }
+}
